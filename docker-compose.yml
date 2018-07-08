@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  api:
+    container_name: 'api'
+    ports:
+      - "8000:8000"
+    command: go run main.go
+    build:
+      context: ./backend
+      args:
+        arg_firebase_json_name: ${FIREBASE_JSON_FILE_NAME}
+    volumes:
+      - ./backend/app:/app
+    environment:
+      - FIREBASE_JSON_FILE_NAME
