@@ -6,7 +6,7 @@
 * https://qiita.com/po3rin/items/d3e016d01162e9d9de80
 
 
-### 利用について
+### 利用手順
 
 #### フロントエンド(Vue.js)
 
